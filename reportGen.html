@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--css link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>   
+    <!--Navigation bar-->  
+    <div class="navBar">
+        <img id="userImage"  src="assets/images/proPic.jpg" alt="" style="max-height: 100px; width: 100px; border: solid black 2px;">
+        <ul class="nav">
+            <li class="navLi">Home</li>
+            <li class="navLi">About</li>
+            <li class="navLi">Contact</li>
+        </ul>
+    </div>
+
+    ​<div class="sidenav">
+        <a class="aTitle">Exam List</a>
+        <a href="examPage.html" id="concreteExam" data-url="/api/concrete">Concrete</a>
+        <a href="examPage.html" id="SoilsExam" data-url="/api/soils">Soils</a>
+        <a href="examPage.html" id="AsphaltExam" data-url="/api/asphalt">Asphalt</a>
+        <!-- <a href="#">Contact</a> -->
+    </div>
+    
+    <div class="container2">
+        <h2 id="test_status"></h2>
+        <div id="reportInput"></div>
+      </div>
+
+
+    
+        
+      <script src="assets/javascript/report.js"></script>
+</body>
+</html>
