@@ -11,19 +11,19 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- Import Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
     
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--css link-->
-    <link rel="stylesheet" href="public/assets/css/style.css" />
     
     <!--Import materialize.css, Compiled and minified CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    
+    <!--css link-->
+    <link rel="stylesheet" href="public/assets/css/style.css" />
     <!--jQuery script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
@@ -54,7 +54,7 @@
           <li class="bold"><a  class="waves-effect waves-teal collapsible">Exams</a>
             <div class="content">
               <ul>
-                <li href="mobile.html" class="waves-effect waves-teal bold2">Concrete</li>
+                <li href="/examPage" class="waves-effect waves-teal bold2">Concrete</li>
                 <li class="waves-effect waves-teal bold2">Soils</li>
                 <li class="waves-effect waves-teal bold2">Asphalt</li>
               </ul>
@@ -74,7 +74,7 @@
         <div class="nav-wrapper">
           <ul class="right">
               <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <li>
+            <!-- <li>
               <div class="center row">
                 <div class="col s12 ">
                   <div class="row" id="topbarsearch">
@@ -94,10 +94,13 @@
                   </div>
                 </div>
               </div>
-            </li>
+            </li> -->
+            
             <li><a href="#" class="text">Home</a></li>
             <li><a href="#" class="text">Contact</a></li>
             <li><a href="#" class="text">Location</a></li>
+            <a class="waves-effect waves-light btn"><i class="material-icons right">send</i>SignUp</a>
+            <a class="btn waves-effect waves-light"><i class="material-icons right">cloud</i>LogIn</a>
             <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a></li>
@@ -122,13 +125,22 @@
 
            
       
-            <div class="introHeader">
-              <img src="/public/assets/images/Logo-longer.PNG" alt="">
-            </div>
+      <div class="introHeader">
+        <img src="/public/assets/images/Logo-longer.PNG" alt="">
+      </div>
 
+      <div class="textBody">
+          <h3>About</h3>
           <p>
-            Help your technicians pass thier material testing and inspection
-            certifications here with practice exams and training materials.
+              TechWorks was created to allow engineering technicians and project managers the ability to prepare for industry
+               related certifications quickly and efficiently.  Engineering technicians are able to use the training modules
+                to prepare for certifications and proficiency exams.  Technicians are even able to take practice examinations
+                 that immolate test like questions and get them prepared. 
+          </p>
+          <p>
+            Help your technicians pass thier material testing and inspection certifications here with practice exams and training
+             materials. There are also tools that can keep a technician or Project Manager updated with industry conditions, whether its
+               local news or weather with in the area. 
           </p>
           <p>
             The content on this page is made to help technicians pass the
@@ -139,10 +151,13 @@
             <li>ACI</li>
             <li>VDOT</li>
           </ul>
-        
+          <p>
+              Check out the getting started section to view more!
+          </p>
+      </div>
 
         <!--  -->
-        <div class="examHead"><h2>Type of Inspections</h2></div>
+        <div class="examHead"><h2>Getting Started</h2></div>
         <div class="container">
           <div class="sectionTab"></div>
         </div>
