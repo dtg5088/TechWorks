@@ -42,12 +42,12 @@
          
           <li class="bold"><a href="dashboard.html" class="waves-effect waves-teal collapsible">About</a></li>
           <li class="bold"><a href="#" class="waves-effect waves-teal collapsible">Getting Started</a></li>
-          <li class="bold"><a href="#" class="waves-effect waves-teal collapsible">Training Modules</a>
+          <li class="bold"><a href="/training.html" class="waves-effect waves-teal collapsible">Training Modules</a>
             <div class="content">
                 <ul>
-                  <li href="mobile.html" class="waves-effect waves-teal bold2">Concrete</li>
-                  <li class="waves-effect waves-teal bold2">Soils</li>
-                  <li class="waves-effect waves-teal bold2">Asphalt</li>
+                  <li class="waves-effect waves-teal bold2"><a href="/training.html" onclick="concreteModule()" data-name="concrete">Concrete</a></li>
+                  <li class="waves-effect waves-teal bold2"><a href="/training.html" onclick="trainingModule.soilModule()" data-name="soils">Soils</a></li>
+                  <li class="waves-effect waves-teal bold2"><a href="/training.html" onclick="trainingModule.asphaltModule()" data-name="asphalt">Asphalt</a></li>
                 </ul>
               </div>
           </li>
@@ -67,7 +67,7 @@
         </ul>
         
       
-    <div class="pageContainer">
+    <div class="pageContainer" style="background-color:grey;">
 
       <!-- Top navigation bar for the page -->
       <nav class="topnav" id="myTopnav">
@@ -118,59 +118,34 @@
           <a href="examPage.html" id="SoilsExam" data-url="/api/soils">Soils</a>
           <a href="examPage.html" id="AsphaltExam" data-url="/api/asphalt">Asphalt</a>
         </div> -->
-        <img class="jumbotron-img" src="/public/assets/images/constructionImg-jumbotron.jpg" alt="">
+        <!-- <img class="jumbotron-img" src="/public/assets/images/constructionImg-jumbotron.jpg" alt=""> -->
         
-        
-
-
-           
-      
-      <div class="introHeader">
+    
+      <!-- <div class="introHeader">
         <img src="/public/assets/images/Logo-longer.PNG" alt="">
-      </div>
+      </div> -->
+      <div></div>
+            <div class="container2" >
+                <div class="examHead"><h2>Training Modules</h2></div>
+                
+                <a class="sectionTab">
+                  <div class="imgHidden"><img src="/public/assets/images/concreteImg.jpg" alt=""></div>
+                  <h5>Concrete</h5>
+                </a>
+                <a class="sectionTab">
+                    <div class="imgHidden"><img src="/public/assets/images/soilsImg.jpg" alt=""></div>
+                  <h5>Soils and Aggregate</h5>
+                </a>
+                <a class="sectionTab">
+                    <div class="imgHidden"><img src="/public/assets/images/asphalt.jpeg" alt=""></div>
+                    <h5>Asphalt</h5>
+                </a>
+            </div>
 
-      <div class="textBody">
-          <h3>About</h3>
-          <p>
-              TechWorks was created to allow engineering technicians and project managers the ability to prepare for industry
-               related certifications quickly and efficiently.  Engineering technicians are able to use the training modules
-                to prepare for certifications and proficiency exams.  Technicians are even able to take practice examinations
-                 that immolate test like questions and get them prepared. 
-          </p>
-          <p>
-            Help your technicians pass thier material testing and inspection certifications here with practice exams and training
-             materials. There are also tools that can keep a technician or Project Manager updated with industry conditions, whether its
-               local news or weather with in the area. 
-          </p>
-          <p>
-            The content on this page is made to help technicians pass the
-            following certifications:
-          </p>
-          <ul>
-            <li>WACEL</li>
-            <li>ACI</li>
-            <li>VDOT</li>
-          </ul>
-          <p>
-              Check out the getting started section to view more!
-          </p>
       </div>
-
-        <!--  -->
-        <div class="examHead"><h2>Getting Started</h2></div>
-        <div class="container">
-          <div class="sectionTab"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+   
   
     <!--JavaScript at end of body for optimized loading-->
-    <script src="public/assets/javascript/script.js"></script>
-  </body>
+    <script src="/public/assets/javascript/script.js"></script>
+</body>
 </html>
-
-    <div class="container2">
-        <h2 id="pageStatus"></h2>
-        <div id="pageInformation"></div>
-    </div>
