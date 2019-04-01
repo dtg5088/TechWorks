@@ -98,9 +98,12 @@ h3 {
 
 .container2 {
     background-color: white;
-    margin: 20px 20% 30px 20%;
+    margin: 100px 15% 30px 15%;
     width: auto;
+    overflow: inherit;
     padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: #1b0900 2px 3px 5px;
 }
 
 .choice {
@@ -113,10 +116,45 @@ text-align: center;
 }  
     
 .sectionTab{ 
-     width: 20%; /*should change this to a fixed width for more dynamic*/ 
+     width: 250px; /*should change this to a fixed width for more dynamic*/ 
+     height: 300px;
      float: left;
-     margin: 10px 20px; 
+     margin: 10px 20px;
+     border: solid gainsboro 2px;
+     box-shadow: rgb(160, 158, 158) 2px 3px 5px;
+     float: left;
+     transform: scaleY(1);
+     color: black;
  } 
+
+ .sectionTab h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+ }
+
+ .sectionTab img {
+     padding: 0px 0px 8px 0px;
+     width: 100%;
+
+ }
+
+ .imgHidden{
+     height: 120px;
+     overflow: hidden;
+ }
+
+ .sectionTab:hover{ 
+    width: 250px; /*should change this to a fixed width for more dynamic*/ 
+    height: 300px;
+    float: left;
+    margin: 10px 20px;
+    border: solid gainsboro 2px;
+    box-shadow: rgb(124, 124, 124) 4px 5px 10px;
+    float: left;
+    transition: 0.2s ease-out;
+    transform: scaleY(1.03);
+
+}
 
 #autocomplete-input {
     background-color: white;
@@ -263,17 +301,67 @@ p {
     display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 601px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+@media screen and (max-width: 992px) {
+    .pageContainer {
+        background-color: white;
+        padding: 0px;
+        display: block;
+        transition: max-height 0.4s ease-out;
+        width: 100%;
+        height: auto;
+        overflow: auto;
     }
-  }
+
+    .container2 {
+        background-color: white;
+        margin: 100px 8% 30px 8%;
+        height: auto;
+        padding: 20px 40px;
+    }
+
+    .topnav ul {
+        float: left;
+      }
+}
+
+@media screen and (max-width: 808px){
+    .sectionTab{ 
+        width: 400px; /*should change this to a fixed width for more dynamic*/ 
+        height: 400px;
+        float: left;
+        margin: 20px 20px;
+        border: solid gainsboro 2px;
+        box-shadow: rgb(160, 158, 158) 2px 3px 5px;
+        float: left;
+        transform: scaleY(0.99);
+    } 
+
+    .sectionTab:hover{ 
+        width: 400px; /*should change this to a fixed width for more dynamic*/ 
+        height: 400px;
+        float: left;
+        margin: 10px 20px;
+        border: solid gainsboro 2px;
+        box-shadow: rgb(124, 124, 124) 4px 5px 10px;
+        float: left;
+        transition: 0.4s ease-out;
+        transform: scaleY(1);
+    }
+
+    .imgHidden{
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
+    .topnav li {
+        float: right;
+        display: none;
+      }
     .topnav .responsive {position: relative;}
     .topnav .responsive a.icon {
       position: absolute;
@@ -285,36 +373,50 @@ p {
       display: block;
       text-align: left;
     }
-  }
-
-  @media screen and (max-width: 601px) {
-    .topnav li {
-      float: right;
-      display: none;
+    .container2 {
+        background-color: white;
+        margin: 100px 0px 30px 0px;
+        height: auto;
+        width: 100%;
+        padding: 20px 10px;
     }
 
-    .topnav {
-        
+    .examHead {
+        width:100%;
     }
 
+    .sectionTab{ 
+        width: 400px; /*should change this to a fixed width for more dynamic*/ 
+        height: 400px;
+        float: left;
+        margin: 20px 20px;
+        border: solid gainsboro 2px;
+        box-shadow: rgb(160, 158, 158) 2px 3px 5px;
+        float: left;
+        transform: scaleY(0.99);
+    } 
+
+    .sectionTab:hover{ 
+        width: 400px; /*should change this to a fixed width for more dynamic*/ 
+        height: 400px;
+        float: left;
+        margin: 10px 20px;
+        border: solid gainsboro 2px;
+        box-shadow: rgb(124, 124, 124) 4px 5px 10px;
+        float: left;
+        transition: 0.4s ease-out;
+        transform: scaleY(1);
+    }
+
+    .imgHidden{
+        height: auto;
+        overflow: hidden;
+    }
+    
   }
   
   /* ------------collapsible element for Top navigation bar close------------ */
 
 
-  @media screen and (max-width: 992px) {
-    .pageContainer {
-        background-color: white;
-        padding: 0px;
-        display: block;
-        transition: max-height 0.4s ease-out;
-        width: 100%;
-        height: auto;
-        overflow: auto;
-    }
-
-    .topnav ul {
-        float: left;
-      }
-}
+  
 
