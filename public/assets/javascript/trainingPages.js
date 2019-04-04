@@ -3,7 +3,7 @@ var imageNumber = 0;
 var imageLength = (images.length-1);
 
 function changeImage(x){
-    imageNumber += x;
+    imageNumber += x;   
     if(imageNumber > imageLength){
         imageNumber = 0; // in the future change this to open a Quiz or exam page
     }
