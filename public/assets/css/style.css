@@ -257,7 +257,9 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-
+#slideshow {
+    width: 100%;
+}
 
 
 
@@ -294,6 +296,11 @@ p {
   }
 
 /* ------------collapsible elements for links close------------ */
+
+
+
+
+
 
 
 /* ------------collapsible element for TOP navigation bar open------------ */
@@ -411,6 +418,10 @@ p {
     .imgHidden{
         height: auto;
         overflow: hidden;
+    }
+
+    #slideshow {
+        width: 100%;
     }
     
   }
