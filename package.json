@@ -1,0 +1,44 @@
+{
+  "name": "techworks",
+  "version": "1.0.0",
+  "description": "Assits Engineering Technicians in passing Soils, Concrete, and Asphalt field certifications",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtg5088/TechWorks.git"
+  },
+  "keywords": [
+    "Technician",
+    "Engineering",
+    "Concrete",
+    "Soils",
+    "Asphalt"
+  ],
+  "author": "Devan Gillaird",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtg5088/TechWorks/issues"
+  },
+  "homepage": "https://github.com/dtg5088/TechWorks#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.2",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "hover.css": "^2.3.2",
+    "mongodb": "^3.2.2",
+    "mongojs": "^2.6.0",
+    "mongoose": "^5.4.22",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}

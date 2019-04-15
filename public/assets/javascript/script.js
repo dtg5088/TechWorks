@@ -28,6 +28,7 @@ function myFunction() {
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
+  $('.sidenav').sidenav();
 
 
   function addTrainingModule() {

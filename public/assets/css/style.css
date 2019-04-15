@@ -164,7 +164,7 @@ text-align: center;
 }
 
 .brand-logo {
-    margin: 35px 10px 70px 0px;
+    margin: 20px 10px 90px 0px;
     padding: 20px;
 }
 .brand-logo img{
@@ -214,6 +214,10 @@ text-align: center;
     margin-top: -40px;
     width: 100%;
     padding: 0px;
+}
+
+input .choices {
+    height: 10px;
 }
 
 .introHeader {
@@ -297,9 +301,64 @@ p {
 
 /* ------------collapsible elements for links close------------ */
 
+ .registerBtn {
+    background-color: rgb(1, 109, 1);
+    color: white;
+    width: 200px;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: black 2px 3px 5px;
+    text-align: center;
+    margin: auto;
+ }
 
+ .registerBtn:hover {
+    background-color: rgb(1, 139, 1);
+    color: white;
+    width: 200px;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: black 4px 6px 10px;
+    text-align: center;
+    margin: auto;
+    flex-grow: 2;
+ }
 
+ .loginBtn {
+    background-color: rgb(109, 1, 1);
+    color: white;
+    width: 200px;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: black 2px 3px 5px;
+    text-align: center;
+    margin: auto;
+ }
 
+ .loginBtn:hover {
+    background-color: rgb(170, 2, 2);
+    color: white;
+    width: 200px;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: black 4px 6px 10px;
+    text-align: center;
+    margin: auto;
+    flex-grow: 20px;
+ }
+
+ .sideNavBtn {
+     background-color: rgb(78, 78, 78);
+     width: 30px;
+     height: 40px;
+     margin: 0px 0px 5px 0px;
+     border-radius: 8px;
+     text-align: center;
+     float: right;
+     box-shadow: #1b0900 3px 2px 5px;
+     color: white;
+     opacity: 0.9;
+ }
 
 
 

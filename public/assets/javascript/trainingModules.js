@@ -4,6 +4,7 @@ var i;
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
+$('.sidenav').sidenav();
 
 //collapsible setting for side element
 for (i = 0; i < coll.length; i++) {

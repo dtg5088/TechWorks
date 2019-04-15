@@ -23,40 +23,41 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <!--css link-->
-    <link rel="stylesheet" href="public/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!--jQuery script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
-
+  
   <body>
 
     <!-- Side Navigation bar-->
     
       <ul id="slide-out" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
           <li class="logo"><a id="logo-container" href="#" class="brand-logo">
-              <img src="/public/assets/images/Logo-longer.PNG" alt=""> </a>
+              <div class="sideNavBtn sidenav-close">X</div>
+              <img src="assets/images/Logo-longer.PNG" alt=""> </a>
             </li>
             <div class="divider"></div>
          
-          <li class="bold"><a href="dashboard.html" class="waves-effect waves-teal collapsible">About</a></li>
-          <li class="bold"><a href="#" class="waves-effect waves-teal collapsible">Getting Started</a></li>
-          <li class="bold"><a href="/training.html" class="waves-effect waves-teal collapsible">Training Modules</a>
+          <li class="bold"><a href="/dashboard" class="waves-effect waves-teal collapsible">About</a></li>
+          <li class="bold"><a href="/dashboard" class="waves-effect waves-teal collapsible">Getting Started</a></li>
+          <li class="bold"><a href="/training" class="waves-effect waves-teal collapsible">Training Modules</a>
             <div class="content">
                 <ul>
-                  <li class="waves-effect waves-teal bold2"><a href="/training.html" name="concrete">Concrete</a></li>
-                  <li class="waves-effect waves-teal bold2"><a href="/training.html" name="soils">Soils</a></li>
-                  <li class="waves-effect waves-teal bold2"><a href="/training.html" name="asphalt">Asphalt</a></li>
+                  <li class="waves-effect waves-teal bold2"><a href="/training" name="concrete">Concrete</a></li>
+                  <li class="waves-effect waves-teal bold2"><a href="/training" name="soils">Soils</a></li>
+                  <li class="waves-effect waves-teal bold2"><a href="/training" name="asphalt">Asphalt</a></li>
                 </ul>
               </div>
           </li>
           <li class="bold"><a  class="waves-effect waves-teal collapsible">Exams</a>
             <div class="content">
-              <ul>
-                <li href="/examPage.html" class="waves-effect waves-teal bold2">Concrete</li>
-                <li class="waves-effect waves-teal bold2">Soils</li>
-                <li class="waves-effect waves-teal bold2">Asphalt</li>
+              <ul>   
+                <li class="waves-effect waves-teal bold2"><a href="/examPage" >Concrete</a></li>
+                <li class="waves-effect waves-teal bold2"><a href="/examPage" >Soils</a></li>
+                <li class="waves-effect waves-teal bold2"><a href="/examPage" >Asphalt</a></li>
               </ul>
             </div>
           </li>
@@ -67,7 +68,7 @@
         </ul>
         
       
-    <div class="pageContainer">
+    <div class="pageContainer sidenav-close">
 
       <!-- Top navigation bar for the page -->
       <nav class="topnav" id="myTopnav">
@@ -118,7 +119,7 @@
           <a href="examPage.html" id="SoilsExam" data-url="/api/soils">Soils</a>
           <a href="examPage.html" id="AsphaltExam" data-url="/api/asphalt">Asphalt</a>
         </div> -->
-        <img class="jumbotron-img" src="/public/assets/images/constructionImg-jumbotron.jpg" alt="">
+        <img class="jumbotron-img" src="assets/images/constructionImg-jumbotron.jpg" alt="">
         
         
 
@@ -126,7 +127,7 @@
            
       
       <div class="introHeader">
-        <img src="/public/assets/images/Logo-longer.PNG" alt="">
+        <img src="/assets/images/Logo-longer.PNG" alt="">
       </div>
 
       <div class="textBody">
@@ -166,6 +167,6 @@
   </div>
   
     <!--JavaScript at end of body for optimized loading-->
-    <script src="public/assets/javascript/script.js"></script>
+    <script src="assets/javascript/script.js"></script>
   </body>
 </html>

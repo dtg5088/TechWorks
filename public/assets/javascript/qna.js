@@ -1,3 +1,34 @@
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+//collapsible setting for side element
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+//collapsing setting for top navigation bar
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  $('.sidenav').sidenav();
 
 
 
@@ -29,17 +60,17 @@ function renderQuestion() {
   chC = questions[pos][3];
   chD = questions[pos][4];
   test.innerHTML = "<h3>" + question + "</h3>";
-  test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
-  test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
-  test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
-  test.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
+  test.innerHTML += "<input type='radio' name='choices' value='A'class='choices'> "+chA+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='B'class='choices'> "+chB+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='C'class='choices'> "+chC+"<br>";
+  test.innerHTML += "<input type='radio' name='choices' value='D'class='choices'> "+chD+"<br><br>";
   test.innerHTML += "<button onClick='checkAnswer()'> Submit Answer </button>";
 }
 
 function checkAnswer(){
   choices = document.getElementsByName("choices");
   for(var i =0; i<choices.length; i++){
-    if (choices[i].checked){
+    if (choices[i].checked){  
         choice = choices[i].value;
     }
   }

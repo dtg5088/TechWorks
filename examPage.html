@@ -7,28 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TechWorks</title>
 
-    <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Import Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
-    
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!--Import materialize.css, Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <!--css link-->
-    <link rel="stylesheet" href="public/assets/css/style.css" />
-    <!--jQuery script-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <!--Import Google Icon Font-->
+     <link
+     href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet"
+   />
+   <!-- Import Google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
+   
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <!--Import materialize.css, Compiled and minified CSS -->
+   <link
+     rel="stylesheet"  
+     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+   />
+   <!--css link-->
+   <link rel="stylesheet" href="assets/css/style.css" />
+   <!--jQuery script-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
 
   <body>
@@ -37,27 +37,27 @@
     
       <ul id="slide-out" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
           <li class="logo"><a id="logo-container" href="#" class="brand-logo">
-              <img src="/public/assets/images/Logo-longer.PNG" alt=""> </a>
+              <img src="/assets/images/Logo-longer.PNG" alt=""> </a>
             </li>
             <div class="divider"></div>
          
-          <li class="bold"><a href="dashboard.html" class="waves-effect waves-teal collapsible">About</a></li>
-          <li class="bold"><a href="#" class="waves-effect waves-teal collapsible">Getting Started</a></li>
-          <li class="bold"><a href="#" class="waves-effect waves-teal collapsible">Training Modules</a>
+          <li class="bold"><a href="/dashboard" class="waves-effect waves-teal collapsible">About</a></li>
+          <li class="bold"><a href="/dashboard" class="waves-effect waves-teal collapsible">Getting Started</a></li>
+          <li class="bold"><a href="/training" class="waves-effect waves-teal collapsible">Training Modules</a>
             <div class="content">
                 <ul>
-                    <li class="waves-effect waves-teal bold2"><a href="/training.html" data-name="concrete">Concrete</a></li>
-                    <li class="waves-effect waves-teal bold2"><a href="/training.html" data-name="concrete">Soils</a></li>
-                    <li class="waves-effect waves-teal bold2"><a href="/training.html" data-name="concrete">Asphalt</a></li>
+                    <li class="waves-effect waves-teal bold2"><a href="/training" data-name="concrete">Concrete</a></li>
+                    <li class="waves-effect waves-teal bold2"><a href="/training" data-name="concrete">Soils</a></li>
+                    <li class="waves-effect waves-teal bold2"><a href="/training" data-name="concrete">Asphalt</a></li>
                 </ul>
               </div>
           </li>
           <li class="bold"><a  class="waves-effect waves-teal collapsible">Exams</a>
             <div class="content">
               <ul>
-                <li href="examPage.html" class="waves-effect waves-teal bold2">Concrete</li>
-                <li class="waves-effect waves-teal bold2">Soils</li>
-                <li class="waves-effect waves-teal bold2">Asphalt</li>
+                <li class="waves-effect waves-teal bold2"><a href="/examPage" >Concrete</a></li>
+                <li class="waves-effect waves-teal bold2"><a href="/examPage" >Soils</a></li>
+                <li class="waves-effect waves-teal bold2"><a href="/examPage" >Asphalt</a></li>
               </ul>
             </div>
           </li>
@@ -71,7 +71,7 @@
     <div class="pageContainer" style="background-color:grey;">
 
       <!-- Top navigation bar for the page -->
-      <nav class="topnav" id="myTopnav">
+      <nav class="topnav sidenav-close" id="myTopnav">
         <div class="nav-wrapper">
           <ul class="right">
               <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -114,7 +114,7 @@
 
     
    
-    <div class="container2">
+    <div class="container2 sidenav-close">
         <h2 id="test_status"></h2>
         <div id="test"></div>
     </div>
@@ -122,6 +122,6 @@
 
     
     
-    <script src="public/assets/javascript/qna.js"></script>
+    <script src="assets/javascript/qna.js"></script>
 </body>
 </html>
